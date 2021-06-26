@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
     <title>Tim Berners Lee</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto+Slab:wght@900&family=Train+One&display=swap" rel="stylesheet">
@@ -11,17 +14,21 @@
 </head>
 
 <body>
-    <center>
-        <ul class="menu">
-            <li class="links"> <a href="#welcome"> Home </a> </li>
-            <li class="links"> <a href="#videos"> My Videos </a> </li>
-            <li class="links"> <a href="#work"> Work </a> </li>
-            <li class="links"> <a href="#writings"> Writings </a> </li>
-            <li class="links"> <a href="#contact"> Contact </a> </li>
-        </ul>
-    </center>
-    <section id="welcome" class="parallax-container">
-        <div class="parallax-inner"> <img src="Sir_Tim_Berners-Lee_(cropped).jpg" class="profile">
+
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-taret="#mynavbar"> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </button> <a class="navbar-brand" href="#"> TIM BERNERS LEE</a></div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li> <a href="#welcome"> Home </a> </li>
+                <li> <a href="#videos"> My Videos </a> </li>
+                <li> <a href="#work"> Work </a> </li>
+                <li> <a href="#writings"> Writings </a> </li>
+                <li> <a href="#contact"> Contact </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="welcome">
+        <div> <img src="Sir_Tim_Berners-Lee_(cropped).jpg" class="profile">
             <h1> I am <br> <span id="name"> Tim Berners Lee </span></h1>
             <h2>I am the founder of triple w: world wide web</h2>
         </div>
@@ -44,8 +51,15 @@
         <div class="line"> </div> <a class="article" href="https://webfoundation.org/2019/03/web-birthday-30/" target="_blank"> 30 years, whats next for the www: world wide web?</a> <br> <br> <a class="article" href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web" target="_blank"> How did tim berners lee with the world wide web </a>
     </section>
     <br> <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
     <section id="contact">
-        <div class="contact_1"> <a href="mailto:timberlee@outlook.com?Subject=hello"> <i class="fa fa-envelope"> </i> &nbsp; &nbsp; <h3> tbl.www.f@gmail.com</h3></a> <br> <br> <a href="#"> <i class="fa fa-instagram"> </i> &nbsp; &nbsp; <h3> tbl.www.f.ip</h3></a> <br> <br> </div>
+
+        <div class="contact_1 col-lg-6 col-md-6 col-sm-6 col-xs-12"> <a href="mailto:timberlee@outlook.com?Subject=hello"> <i class="fa fa-envelope"> </i> &nbsp; &nbsp; <h3> tbl.www.gm@gmail.com</h3></a> <br> <br> <a href="#"> <i class="fa fa-instagram"> </i> &nbsp; &nbsp; <h3> tbl.www.f.ip</h3></a> <br> <br> </div>
+        <div class="contact_2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <form><span>name: </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required>
+                <br> <br><span>comment: </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="comment" required> <br> <br> <input type="submit" value="submit" class="btn btn-success">
+            </form>
+        </div>
     </section>
     <script src="file.js"></script>
 </body>
